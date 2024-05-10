@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url('paper.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 32px; /* 모바일 환경 기본 글자 크기 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 24px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .tablink {
+            background-color: #ffffff;
+            color: #555555;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 16px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin: 10px;
+        }
+        .tablink:hover, .tablink.active {
+            background-color: #5c67f2;
+            color: #ffffff;
+        }
+        @media (max-width: 600px) {
+            .tablink {
+                padding: 12px 10px;
+                font-size: 14px;
+            }
+        }
+        @media (min-width: 601px) {
+            h1 {
+                font-size: 48px; /* 데스크탑에서 글자 크기 증가 */
+            }
+            h2 {
+                font-size: 36px;
+            }
+            .tablink {
+                padding: 20px 30px;
+                font-size: 18px; /* 데스크탑에서 탭 크기 증가 */
+                margin: 15px; /* 데스크탑에서의 마진 조정 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>김광민호여친구함 팀</h1>
+    <h2>해양 쓰레기 수거를 통한 크레딧</h2>
+    <a href="interactive_map_west.html" class="tablink">쓰레기 위치 지도</a>
+    <a href="extemped_fuel_calculation.html" class="tablink">예상 지원 면세유</a>
+</body>
+</html>
